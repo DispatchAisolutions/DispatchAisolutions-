@@ -247,7 +247,7 @@ export function LetsWorkTogether() {
           <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
             Book a 20-minute call to review your workflow and identify where AI can create the most value.
           </p>
-          <span className="text-xs tracking-widest uppercase text-muted-foreground/60">contact@dispatchaisolutions.com</span>
+          <span className="text-xs tracking-widest uppercase text-muted-foreground/60">contact@elhajjai.com</span>
         </div>
       </div>
     </section>

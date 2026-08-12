@@ -179,11 +179,11 @@ function Contact() {
           <h2 className="text-2xl md:text-3xl font-bold mb-8">Prefer to Reach Out Directly?</h2>
           <div className="flex flex-col items-center gap-4">
             <a
-              href="mailto:contact@dispatchaisolutions.com"
+              href="mailto:contact@elhajjai.com"
               className="flex items-center gap-3 text-[#a3a3a3] hover:text-white transition-colors"
             >
               <Mail className="h-5 w-5" />
-              <span className="text-base md:text-lg">contact@dispatchaisolutions.com</span>
+              <span className="text-base md:text-lg">contact@elhajjai.com</span>
             </a>
             <div className="flex items-center gap-3 text-[#a3a3a3]">
               <MapPin className="h-5 w-5" />
