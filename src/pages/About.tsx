@@ -1,4 +1,4 @@
-import { TrendingUp, ShieldCheck, Sparkles, Database, Search, Wrench, Link2, FlaskConical, ArrowUpRight } from 'lucide-react';
+import { TrendingUp, ShieldCheck, Sparkles, Database, Search, Wrench, Link2, FlaskConical } from 'lucide-react';
 import { Nav } from '@/components/Nav';
 import { GlowingEffect } from '@/components/ui/glowing-effect';
 import { StarButton } from '@/components/ui/star-button';
@@ -211,7 +211,7 @@ function About() {
             className="w-auto px-8 h-12 text-base font-semibold"
             onClick={() => window.open('https://cal.com/elhajjai/20min', '_blank')}
           >
-            Book a Free Growth Audit <ArrowUpRight className="w-4 h-4 ml-2 inline" />
+            Book Free Consultation
           </StarButton>
         </div>
       </section>

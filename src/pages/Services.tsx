@@ -1,4 +1,4 @@
-import { ArrowUpRight, RefreshCw, Star, Zap, CheckCircle2, Network } from 'lucide-react';
+import { RefreshCw, Star, Zap, CheckCircle2, Network } from 'lucide-react';
 import { Nav } from '@/components/Nav';
 import { StarButton } from '@/components/ui/star-button';
 
@@ -89,7 +89,7 @@ function Services() {
             className="w-auto px-8 h-12 text-base font-semibold"
             onClick={() => window.open('https://cal.com/elhajjai/20min', '_blank')}
           >
-            Book a Free Growth Audit <ArrowUpRight className="w-4 h-4 ml-2 inline" />
+            Book Free Consultation
           </StarButton>
         </div>
       </section>
@@ -253,7 +253,7 @@ function Services() {
             className="w-auto px-8 h-12 text-base font-semibold"
             onClick={() => window.open('https://cal.com/elhajjai/20min', '_blank')}
           >
-            Book a Call <ArrowUpRight className="w-4 h-4 ml-2 inline" />
+            Book a Call
           </StarButton>
         </div>
       </section>

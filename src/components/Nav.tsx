@@ -28,7 +28,7 @@ export function Nav() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <button
           onClick={goHome}
-          className="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity cursor-pointer"
+          className="text-2xl md:text-3xl font-bold tracking-tight hover:opacity-80 transition-opacity cursor-pointer"
         >
           ElHajj Ai
         </button>

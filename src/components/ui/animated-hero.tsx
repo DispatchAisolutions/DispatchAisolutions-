@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { StarButton } from "@/components/ui/star-button";
 
@@ -66,7 +65,7 @@ function Hero() {
               className="w-48 h-11 text-base font-semibold"
               onClick={() => window.open("https://cal.com/elhajjai/20min", "_blank")}
             >
-              Book a Call <PhoneCall className="w-4 h-4 ml-1 inline" />
+              Book a Call
             </StarButton>
             <Button
               size="lg"

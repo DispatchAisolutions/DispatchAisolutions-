@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ArrowUpRight } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { Nav } from '@/components/Nav';
 import { StarButton } from '@/components/ui/star-button';
 import { cn } from '@/lib/utils';
@@ -118,7 +118,7 @@ function Faq() {
             className="w-auto px-8 h-12 text-base font-semibold"
             onClick={() => window.open('https://cal.com/elhajjai/20min', '_blank')}
           >
-            Book a Free Growth Audit <ArrowUpRight className="w-4 h-4 ml-2 inline" />
+            Book Free Consultation
           </StarButton>
         </div>
       </section>
