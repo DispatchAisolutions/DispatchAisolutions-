@@ -9,7 +9,7 @@ export function AdditionalServices() {
           use.
         </p>
         <p className="text-lg md:text-xl text-[#f5f5f5] font-medium">
-          Tell us what's eating your time — we'll tell you if AI can take it off your plate.
+          Show us the bottleneck. We'll show you the fix.
         </p>
       </div>
     </section>

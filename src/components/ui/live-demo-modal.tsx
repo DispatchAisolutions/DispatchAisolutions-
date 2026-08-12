@@ -14,7 +14,7 @@ interface LiveDemoModalProps {
 
 const VAPI_API_KEY = "d9e968bc-3810-4b46-af34-e4f7b78aecbb";
 const VAPI_ASSISTANT_ID = "469b4b26-e255-4145-a097-ce8c49ab3175";
-const BOOKING_URL = "https://cal.com/elhajj-ai-sundhf/15min";
+const BOOKING_URL = "https://cal.com/elhajjai/20min";
 
 type TabType = "voice" | "chat";
 

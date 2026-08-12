@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import { Nav } from '@/components/Nav';
 import { Hero } from '@/components/ui/animated-hero';
 import { Problem } from '@/components/Problem';
-import Testimonials from '@/components/Testimonials';
 import { Services } from '@/components/Services';
 import { AdditionalServices } from '@/components/AdditionalServices';
 import { Crm } from '@/components/Crm';
@@ -37,8 +36,6 @@ function Home() {
       </section>
 
       <Problem />
-
-      <Testimonials />
 
       <Services />
 

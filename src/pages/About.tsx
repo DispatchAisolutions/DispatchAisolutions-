@@ -209,7 +209,7 @@ function About() {
             lightColor="#FBBF24"
             duration={6}
             className="w-auto px-8 h-12 text-base font-semibold"
-            onClick={() => window.open('https://cal.com/elhajj-ai-sundhf/15min', '_blank')}
+            onClick={() => window.open('https://cal.com/elhajjai/20min', '_blank')}
           >
             Book a Free Growth Audit <ArrowUpRight className="w-4 h-4 ml-2 inline" />
           </StarButton>

@@ -56,7 +56,7 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              ElHajj Ai builds AI agents that work like employees for your business — reaching out to past customers, following up after every purchase or service, and replying to every message the second it arrives. They don't sleep, don't miss a message, and cost a fraction of hiring someone full-time.
+              ElHajj Ai builds AI agents that work like employees for your business — reaching out to past customers, following up after every purchase or service, and replying to every message the second it arrives.
             </p>
           </div>
           <div className="flex flex-row gap-3">
@@ -64,9 +64,9 @@ function Hero() {
               lightColor="#FBBF24"
               duration={6}
               className="w-48 h-11 text-base font-semibold"
-              onClick={() => window.open("https://cal.com/elhajj-ai-sundhf/15min", "_blank")}
+              onClick={() => window.open("https://cal.com/elhajjai/20min", "_blank")}
             >
-              Book a Call
+              Book a Call <PhoneCall className="w-4 h-4 ml-1 inline" />
             </StarButton>
             <Button
               size="lg"
@@ -74,7 +74,7 @@ function Hero() {
               variant="outline"
               onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
             >
-              See Process <PhoneCall className="w-4 h-4" />
+              See Process
             </Button>
           </div>
         </div>

@@ -19,7 +19,7 @@ export function LetsWorkTogether() {
   }
 
   const handleBookCall = () => {
-    window.open("https://cal.com/elhajj-ai-sundhf/15min", "_blank")
+    window.open("https://cal.com/elhajjai/20min", "_blank")
   }
 
   return (
