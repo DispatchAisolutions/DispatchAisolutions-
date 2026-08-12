@@ -3,11 +3,9 @@ import { motion } from "framer-motion";
 import { PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { StarButton } from "@/components/ui/star-button";
-import { LiveDemoModal } from "@/components/ui/live-demo-modal";
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const titles = useMemo(
     () => ["24/7", "Faster", "Cost-efficient", "Reliable"],
     []
@@ -58,34 +56,29 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              We build and deploy AI systems that answer calls, follow up with
-              leads, support customers, and book appointments — automatically.
-              Tailored for companies that don’t want to fall behind as AI becomes 
-              the standard for speed and service.
-
+              ElHajj Ai builds AI agents that work like employees for your business — reaching out to past customers, following up after every purchase or service, and replying to every message the second it arrives. They don't sleep, don't miss a message, and cost a fraction of hiring someone full-time.
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <Button
-              size="lg"
-              className="gap-4 rounded-full"
-              variant="outline"
-              onClick={() => window.open("https://cal.com/elhajj-ai-sundhf/15min", "_blank")}
-            >
-              Book a call <PhoneCall className="w-4 h-4" />
-            </Button>
             <StarButton
               lightColor="#FBBF24"
               duration={6}
               className="w-48 h-11 text-base font-semibold"
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => window.open("https://cal.com/elhajj-ai-sundhf/15min", "_blank")}
             >
-              Try live demo
+              Book a Call
             </StarButton>
+            <Button
+              size="lg"
+              className="gap-4 rounded-full"
+              variant="outline"
+              onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              See Process <PhoneCall className="w-4 h-4" />
+            </Button>
           </div>
         </div>
       </div>
-      <LiveDemoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 }

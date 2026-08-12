@@ -1,61 +1,55 @@
-import { Phone, MessageSquare, Calendar, Users } from "lucide-react";
+import { RefreshCw, Star, Zap } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { cn } from "@/lib/utils";
 
 export function Services() {
   return (
-    <section className="py-24 px-6 border-t border-white/5">
+    <section id="services" className="py-24 px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">What We Build</h2>
-          <p className="text-xl text-[#a3a3a3] font-light">Purpose-built AI systems for your business.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">The Solution</h2>
+          <p className="text-xl text-[#a3a3a3] font-light">
+            One connected system, three jobs, all working while you run your business.
+          </p>
         </div>
-        <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <GridItem
-            area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-            icon={<Phone className="h-4 w-4" />}
-            title="Voice AI (Inbound & Outbound)"
-            description="A 24/7 AI receptionist + AI caller that answers calls, qualifies callers, books appointments, calls leads back, and runs outbound campaigns."
-            outcome="Every call becomes booked, routed, or captured—never missed."
+            icon={<RefreshCw className="h-4 w-4" />}
+            title="Agent 1 — Reactivation"
+            description="Brings past customers back and gets them buying again. Agent 1 reaches out to past customers with a personalized message, handles the back-and-forth conversation naturally, and gets them re-engaged — booked, ordered, or scheduled again. No customer falls through the cracks."
           />
           <GridItem
-            area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-            icon={<Users className="h-4 w-4" />}
-            title="AI Customer Support"
-            description="Not a basic chatbot—this is Tier-1 support automation that resolves common questions, escalates edge cases to your team, and improves from past tickets."
-            outcome="Fewer tickets, faster replies, and lower support workload."
+            icon={<Star className="h-4 w-4" />}
+            title="Agent 2 — Follow-Up & Reputation"
+            description="Turns every purchase into a review and a returning customer. After every purchase or service, Agent 2 checks in, makes sure the customer is satisfied, and asks for a review at exactly the right moment — while the experience is still fresh. More reviews. More trust. More referrals."
           />
           <GridItem
-            area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-            icon={<MessageSquare className="h-4 w-4" />}
-            title="AI Lead Nurture & Follow-Up"
-            description="An AI sales assistant that tags leads by intent, personalizes follow-ups, and reaches out via email, SMS, or calls—automatically reactivating cold leads."
-            outcome="Every lead followed up on time—without human effort."
-          />
-          <GridItem
-            area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-            icon={<Calendar className="h-4 w-4" />}
-            title="AI Scheduling (Text & Voice)"
-            description="A frictionless booking engine that handles reschedules, sends confirmations and reminders, and reduces no-shows—through voice or text."
-            outcome="From inquiry to booked appointment automatically."
+            icon={<Zap className="h-4 w-4" />}
+            title="Agent 3 — Instant Reply & Campaigns"
+            description="Never lets a message — or an opportunity — go unanswered. Every inbound message gets a fast, professional reply, 24/7. On top of that, Agent 3 sends targeted marketing campaigns to your customer list, turning your database into an active revenue channel."
           />
         </ul>
+
+        <div className="mt-16 text-center">
+          <p className="text-xl md:text-2xl font-light text-[#f5f5f5]">
+            Three agents. One mission: <span className="font-semibold">more revenue, less manual work.</span>
+          </p>
+        </div>
       </div>
     </section>
   );
 }
 
 interface GridItemProps {
-  area: string;
   icon: React.ReactNode;
   title: string;
   description: React.ReactNode;
-  outcome?: string;
 }
 
-const GridItem = ({ area, icon, title, description, outcome }: GridItemProps) => {
+const GridItem = ({ icon, title, description }: GridItemProps) => {
   return (
-    <li className={cn("min-h-[14rem] list-none", area)}>
+    <li className={cn("min-h-[16rem] list-none")}>
       <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-white/5 p-2 md:rounded-[1.5rem] md:p-3">
         <GlowingEffect
           spread={40}
@@ -77,11 +71,6 @@ const GridItem = ({ area, icon, title, description, outcome }: GridItemProps) =>
               <p className="font-sans text-sm leading-[1.125rem] md:text-base md:leading-[1.375rem] text-[#a3a3a3]">
                 {description}
               </p>
-              {outcome && (
-                <p className="font-sans text-sm leading-[1.125rem] md:text-base md:leading-[1.375rem] text-white font-medium">
-                  Outcome: {outcome}
-                </p>
-              )}
             </div>
           </div>
         </div>
