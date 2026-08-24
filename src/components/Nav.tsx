@@ -31,8 +31,8 @@ export function Nav() {
           className="flex items-baseline gap-1.5 hover:opacity-80 transition-opacity cursor-pointer"
         >
           <span
-            className="text-2xl md:text-3xl font-bold tracking-tight text-[#f5f5f5]"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="text-2xl md:text-3xl tracking-tight text-[#f5f5f5]"
+            style={{ fontFamily: "'Archivo Black', sans-serif" }}
           >
             ElHajj
           </span>
