@@ -28,9 +28,20 @@ export function Nav() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <button
           onClick={goHome}
-          className="text-2xl md:text-3xl font-bold tracking-tight hover:opacity-80 transition-opacity cursor-pointer"
+          className="flex items-baseline gap-1.5 hover:opacity-80 transition-opacity cursor-pointer"
         >
-          ElHajj Ai
+          <span
+            className="text-2xl md:text-3xl font-bold tracking-tight text-[#f5f5f5]"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            ElHajj
+          </span>
+          <span
+            className="text-2xl md:text-3xl italic font-medium text-[#f5f5f5]"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Ai
+          </span>
         </button>
 
         <div className="hidden md:flex items-center gap-8">
