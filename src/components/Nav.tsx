@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 export function Nav() {
   const navigate = useNavigate();
@@ -28,20 +29,9 @@ export function Nav() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <button
           onClick={goHome}
-          className="flex items-baseline gap-1.5 hover:opacity-80 transition-opacity cursor-pointer"
+          className="hover:opacity-80 transition-opacity cursor-pointer"
         >
-          <span
-            className="text-2xl md:text-3xl font-semibold tracking-tight text-[#f5f5f5]"
-            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
-          >
-            ElHajj
-          </span>
-          <span
-            className="text-2xl md:text-3xl italic font-medium text-[#f5f5f5]"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
-            Ai
-          </span>
+          <img src={logo} alt="ElHajj Ai" className="h-7 md:h-9 w-auto" />
         </button>
 
         <div className="hidden md:flex items-center gap-8">
